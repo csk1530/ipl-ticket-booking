@@ -1,0 +1,93 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPL Ticket Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+  <div class="logo-section">
+    <img src="C:\Users\pc\ipl-ticket-booking\images\logo.jpg" alt="IPL Logo">
+    <h1>IPL Ticket Booking</h1>
+  </div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Matches</a>
+    <a href="#">Bookings</a>
+    <a href="#">Contact</a>
+  </nav>
+
+</header>
+
+  <section class="hero">
+    <h2>Book Your IPL Tickets Online</h2>
+    <p>Choose your favorite match and reserve your seats now!</p>
+  </section>
+
+  <section class="matches">
+
+    <div class="card">
+      <img src="C:\Users\pc\ipl-ticket-booking\images\CSK-VS-RCB-1-1.avif" alt="RCB vs CSK">
+      <h3>RCB vs CSK</h3>
+      <p>Date: 20 May 2026</p>
+      <p>Venue: Chinnaswamy Stadium</p>
+      <button onclick="bookTicket('RCB vs CSK')">Book Now</button>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\pc\ipl-ticket-booking\images\mi-kkr.jpg" alt="MI vs KKR">
+      <h3>MI vs KKR</h3>
+      <p>Date: 22 May 2026</p>
+      <p>Venue: Wankhede Stadium</p>
+      <button onclick="bookTicket('MI vs KKR')">Book Now</button>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\pc\ipl-ticket-booking\images\srh -rr.jpg" alt="SRH vs RR">
+      <h3>SRH vs RR</h3>
+      <p>Date: 25 May 2026</p>
+      <p>Venue: Hyderabad Stadium</p>
+      <button onclick="bookTicket('SRH vs RR')">Book Now</button>
+    </div>
+
+  </section>
+
+  <section class="booking-form">
+    <h2>Ticket Booking Form</h2>
+
+    <form id="ticketForm">
+
+      <input type="text" id="name" placeholder="Enter Your Name" required>
+
+      <input type="email" id="email" placeholder="Enter Your Email" required>
+
+      <select id="match">
+        <option value="">Select Match</option>
+        <option>RCB vs CSK</option>
+        <option>MI vs KKR</option>
+        <option>SRH vs RR</option>
+      </select>
+
+      <input type="number" id="tickets" placeholder="Number of Tickets" required>
+
+      <button type="submit">Confirm Booking</button>
+
+    </form>
+
+    <p id="message"></p>
+
+  </section>
+
+  <footer>
+    <p>© 2026 IPL Ticket Booking System</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

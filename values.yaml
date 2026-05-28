@@ -1,0 +1,13 @@
+replicaCount: 2
+
+image:
+  repository: chandu1530/ipl-ticket-booking
+  tag: v1
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 3005
+  targetPort: 80
+
+containerPort: 80
